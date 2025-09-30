@@ -1,0 +1,71 @@
+Command: ninja flash
+[0/1] Re-running CMake...
+-- Minimal build - OFF
+-- Building ESP-IDF components for target esp32
+-- ESP-TEE is currently supported only on the esp32c6;esp32h2;esp32c5 SoCs
+-- Project sdkconfig file /Users/kbbk/Week-11-Microcontroller-applications/Analog/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- App "Analog" version: 5a0da61-dirty
+-- USING O3
+-- Adding linker script /Users/kbbk/Week-11-Microcontroller-applications/Analog/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /Users/kbbk/Week-11-Microcontroller-applications/Analog/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script /Users/kbbk/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /Users/kbbk/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /Users/kbbk/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /Users/kbbk/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script /Users/kbbk/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script /Users/kbbk/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libc-funcs.ld
+-- Adding linker script /Users/kbbk/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-reent-funcs.ld
+-- Adding linker script /Users/kbbk/esp/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_blockdev esp_bootloader_format esp_coex esp_common esp_driver_ana_cmpr esp_driver_bitscrambler esp_driver_cam esp_driver_dac esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_i3c esp_driver_isp esp_driver_jpeg esp_driver_ledc esp_driver_mcpwm esp_driver_parlio esp_driver_pcnt esp_driver_ppa esp_driver_rmt esp_driver_sd_intf esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_touch_sens esp_driver_tsens esp_driver_twai esp_driver_uart esp_driver_usb_serial_jtag esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_libc esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_security esp_system esp_timer esp_usb_cdc_rom_console esp_vfs_console esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread rt sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /Users/kbbk/esp/esp-idf/components/app_trace /Users/kbbk/esp/esp-idf/components/app_update /Users/kbbk/esp/esp-idf/components/bootloader /Users/kbbk/esp/esp-idf/components/bootloader_support /Users/kbbk/esp/esp-idf/components/bt /Users/kbbk/esp/esp-idf/components/cmock /Users/kbbk/esp/esp-idf/components/console /Users/kbbk/esp/esp-idf/components/cxx /Users/kbbk/esp/esp-idf/components/driver /Users/kbbk/esp/esp-idf/components/efuse /Users/kbbk/esp/esp-idf/components/esp-tls /Users/kbbk/esp/esp-idf/components/esp_adc /Users/kbbk/esp/esp-idf/components/esp_app_format /Users/kbbk/esp/esp-idf/components/esp_blockdev /Users/kbbk/esp/esp-idf/components/esp_bootloader_format /Users/kbbk/esp/esp-idf/components/esp_coex /Users/kbbk/esp/esp-idf/components/esp_common /Users/kbbk/esp/esp-idf/components/esp_driver_ana_cmpr /Users/kbbk/esp/esp-idf/components/esp_driver_bitscrambler /Users/kbbk/esp/esp-idf/components/esp_driver_cam /Users/kbbk/esp/esp-idf/components/esp_driver_dac /Users/kbbk/esp/esp-idf/components/esp_driver_gpio /Users/kbbk/esp/esp-idf/components/esp_driver_gptimer /Users/kbbk/esp/esp-idf/components/esp_driver_i2c /Users/kbbk/esp/esp-idf/components/esp_driver_i2s /Users/kbbk/esp/esp-idf/components/esp_driver_i3c /Users/kbbk/esp/esp-idf/components/esp_driver_isp /Users/kbbk/esp/esp-idf/components/esp_driver_jpeg /Users/kbbk/esp/esp-idf/components/esp_driver_ledc /Users/kbbk/esp/esp-idf/components/esp_driver_mcpwm /Users/kbbk/esp/esp-idf/components/esp_driver_parlio /Users/kbbk/esp/esp-idf/components/esp_driver_pcnt /Users/kbbk/esp/esp-idf/components/esp_driver_ppa /Users/kbbk/esp/esp-idf/components/esp_driver_rmt /Users/kbbk/esp/esp-idf/components/esp_driver_sd_intf /Users/kbbk/esp/esp-idf/components/esp_driver_sdio /Users/kbbk/esp/esp-idf/components/esp_driver_sdm /Users/kbbk/esp/esp-idf/components/esp_driver_sdmmc /Users/kbbk/esp/esp-idf/components/esp_driver_sdspi /Users/kbbk/esp/esp-idf/components/esp_driver_spi /Users/kbbk/esp/esp-idf/components/esp_driver_touch_sens /Users/kbbk/esp/esp-idf/components/esp_driver_tsens /Users/kbbk/esp/esp-idf/components/esp_driver_twai /Users/kbbk/esp/esp-idf/components/esp_driver_uart /Users/kbbk/esp/esp-idf/components/esp_driver_usb_serial_jtag /Users/kbbk/esp/esp-idf/components/esp_eth /Users/kbbk/esp/esp-idf/components/esp_event /Users/kbbk/esp/esp-idf/components/esp_gdbstub /Users/kbbk/esp/esp-idf/components/esp_hid /Users/kbbk/esp/esp-idf/components/esp_http_client /Users/kbbk/esp/esp-idf/components/esp_http_server /Users/kbbk/esp/esp-idf/components/esp_https_ota /Users/kbbk/esp/esp-idf/components/esp_https_server /Users/kbbk/esp/esp-idf/components/esp_hw_support /Users/kbbk/esp/esp-idf/components/esp_lcd /Users/kbbk/esp/esp-idf/components/esp_libc /Users/kbbk/esp/esp-idf/components/esp_local_ctrl /Users/kbbk/esp/esp-idf/components/esp_mm /Users/kbbk/esp/esp-idf/components/esp_netif /Users/kbbk/esp/esp-idf/components/esp_netif_stack /Users/kbbk/esp/esp-idf/components/esp_partition /Users/kbbk/esp/esp-idf/components/esp_phy /Users/kbbk/esp/esp-idf/components/esp_pm /Users/kbbk/esp/esp-idf/components/esp_psram /Users/kbbk/esp/esp-idf/components/esp_ringbuf /Users/kbbk/esp/esp-idf/components/esp_rom /Users/kbbk/esp/esp-idf/components/esp_security /Users/kbbk/esp/esp-idf/components/esp_system /Users/kbbk/esp/esp-idf/components/esp_timer /Users/kbbk/esp/esp-idf/components/esp_usb_cdc_rom_console /Users/kbbk/esp/esp-idf/components/esp_vfs_console /Users/kbbk/esp/esp-idf/components/esp_wifi /Users/kbbk/esp/esp-idf/components/espcoredump /Users/kbbk/esp/esp-idf/components/esptool_py /Users/kbbk/esp/esp-idf/components/fatfs /Users/kbbk/esp/esp-idf/components/freertos /Users/kbbk/esp/esp-idf/components/hal /Users/kbbk/esp/esp-idf/components/heap /Users/kbbk/esp/esp-idf/components/http_parser /Users/kbbk/esp/esp-idf/components/idf_test /Users/kbbk/esp/esp-idf/components/ieee802154 /Users/kbbk/esp/esp-idf/components/json /Users/kbbk/esp/esp-idf/components/log /Users/kbbk/esp/esp-idf/components/lwip /Users/kbbk/Week-11-Microcontroller-applications/Analog/main /Users/kbbk/esp/esp-idf/components/mbedtls /Users/kbbk/esp/esp-idf/components/mqtt /Users/kbbk/esp/esp-idf/components/nvs_flash /Users/kbbk/esp/esp-idf/components/nvs_sec_provider /Users/kbbk/esp/esp-idf/components/openthread /Users/kbbk/esp/esp-idf/components/partition_table /Users/kbbk/esp/esp-idf/components/perfmon /Users/kbbk/esp/esp-idf/components/protobuf-c /Users/kbbk/esp/esp-idf/components/protocomm /Users/kbbk/esp/esp-idf/components/pthread /Users/kbbk/esp/esp-idf/components/rt /Users/kbbk/esp/esp-idf/components/sdmmc /Users/kbbk/esp/esp-idf/components/soc /Users/kbbk/esp/esp-idf/components/spi_flash /Users/kbbk/esp/esp-idf/components/spiffs /Users/kbbk/esp/esp-idf/components/tcp_transport /Users/kbbk/esp/esp-idf/components/ulp /Users/kbbk/esp/esp-idf/components/unity /Users/kbbk/esp/esp-idf/components/usb /Users/kbbk/esp/esp-idf/components/vfs /Users/kbbk/esp/esp-idf/components/wear_levelling /Users/kbbk/esp/esp-idf/components/wifi_provisioning /Users/kbbk/esp/esp-idf/components/wpa_supplicant /Users/kbbk/esp/esp-idf/components/xtensa
+-- Configuring done (3.1s)
+-- Generating done (0.4s)
+-- Build files have been written to: /Users/kbbk/Week-11-Microcontroller-applications/Analog/build
+[1/6] cd /Users/kbbk/Week-11-Microcontroller-applications/Analog/build && /Users/kbbk/.espressif/python_env/idf6.0_py3.13_env/bin/python /Users/kbbk/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/kbbk/Week-11-Microcontroller-applications/Analog/build/partition_table/partition-table.bin /Users/kbbk/Week-11-Microcontroller-applications/Analog/build/Analog.bin
+Analog.bin binary size 0x2a320 bytes. Smallest app partition is 0x100000 bytes. 0xd5ce0 bytes (84%) free.
+[2/6] Performing build step for 'bootloader'
+[1/1] cd /Users/kbbk/Week-11-Microcontroller-applications/Analog/build/bootloader && /Users/kbbk/.espressif/python_env/idf6.0_py3.13_env/bin/python /Users/kbbk/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/kbbk/Week-11-Microcontroller-applications/Analog/build/bootloader/bootloader.bin
+Bootloader binary size 0x6680 bytes. 0x980 bytes (8%) free.
+[3/6] No install step for 'bootloader'
+[4/6] Completed 'bootloader'
+[4/6] Running utility command for flash
+esptool.py --chip esp32 -p /dev/cu.usbserial-0001 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x8000 partition_table/partition-table.bin 0x10000 Analog.bin
+esptool.py v4.10.0
+Serial port /dev/cu.usbserial-0001
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 14:33:5c:0e:7a:a8
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x00010000 to 0x0003afff...
+SHA digest in image updated
+Compressed 26240 bytes to 16588...
+Writing at 0x00001000... (50 %)
+Writing at 0x0000756f... (100 %)
+Wrote 26240 bytes (16588 compressed) at 0x00001000 in 0.6 seconds (effective 355.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 221.6 kbit/s)...
+Hash of data verified.
+Compressed 172832 bytes to 96907...
+Writing at 0x00010000... (16 %)
+Writing at 0x0001c8c5... (33 %)
+Writing at 0x000225aa... (50 %)
+Writing at 0x000281a9... (66 %)
+Writing at 0x0002e81f... (83 %)
+Writing at 0x000345a4... (100 %)
+Wrote 172832 bytes (96907 compressed) at 0x00010000 in 2.6 seconds (effective 524.9 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

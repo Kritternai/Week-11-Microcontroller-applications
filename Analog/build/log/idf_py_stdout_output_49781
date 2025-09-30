@@ -1,0 +1,472 @@
+Command: /Users/kbbk/.espressif/python_env/idf6.0_py3.13_env/bin/python /Users/kbbk/esp/esp-idf/tools/idf_monitor.py -p /dev/cu.usbserial-0001 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /Users/kbbk/Week-11-Microcontroller-applications/Analog/build/Analog.elf /Users/kbbk/Week-11-Microcontroller-applications/Analog/build/bootloader/bootloader.elf -m '/Users/kbbk/.espressif/python_env/idf6.0_py3.13_env/bin/python' '/Users/kbbk/esp/esp-idf/tools/idf.py'
+hip revision: v3.1
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) b����[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01�ets Jul 29 2019 12:21:46[0m
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6376
+load:0x40078000,len:15864
+load:0x40080400,len:3908
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v6.0-dev-2273-g166269fb93 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Sep 24 2025 14:29:22[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a2a4h ( 41636) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001a2cc vaddr=3ffb0000 size=02618h (  9752) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001c8ec vaddr=40080000 size=0372ch ( 14124) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=12ea4h ( 77476) map[0m
+[0;32mI (142) esp_image: segment 4: paddr=00032ecc vaddr=4008372c size=07754h ( 30548) load[0m
+[0;32mI (154) esp_image: segment 5: paddr=0003a628 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (160) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (160) boot: Disabling RNG early entropy source...[0m
+[0;32mI (173) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (183) app_init: Application information:[0m
+[0;32mI (187) app_init: Project name:     Analog[0m
+[0;32mI (191) app_init: App version:      5a0da61-dirty[0m
+[0;32mI (195) app_init: Compile time:     Sep 24 2025 14:29:18[0m
+[0;32mI (200) app_init: ELF file SHA256:  d12784705...[0m
+[0;32mI (204) app_init: ESP-IDF:          v6.0-dev-2273-g166269fb93[0m
+[0;32mI (210) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (214) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (218) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (222) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (228) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (233) heap_init: At 3FFB2F00 len 0002D100 (180 KiB): DRAM[0m
+[0;32mI (238) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (244) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (249) heap_init: At 4008AE80 len 00015180 (84 KiB): IRAM[0m
+[0;32mI (256) spi_flash: detected chip: generic[0m
+[0;32mI (258) spi_flash: flash io: dio[0m
+[0;33mW (261) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (274) main_task: Started on CPU0[0m
+[0;32mI (284) main_task: Calling app_main()[0m
+[0;32mI (284) ADC_POT: calibration scheme version is Line Fitting[0m
+[0;32mI (284) ADC_POT: ทดสอบ ADC Potentiometer ของ ESP32[0m
+[0;32mI (284) ADC_POT: Pin: GPIO34 (ADC1_CH6)[0m
+[0;32mI (294) ADC_POT: ช่วง: 0-3.3V[0m
+[0;32mI (294) ADC_POT: ความละเอียด: 12-bit (0-4095)[0m
+[0;32mI (294) ADC_POT: Attenuation: 11dB[0m
+[0;32mI (304) ADC_POT: -------------------------[0m
+[0;32mI (304) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (814) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (1314) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (1814) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (2314) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (2814) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (3314) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (3814) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (4314) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (4814) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (5314) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6376
+load:0x40078000,len:15864
+load:0x40080400,len:3908
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v6.0-dev-2273-g166269fb93 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Sep 24 2025 14:29:22[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a2a4h ( 41636) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001a2cc vaddr=3ffb0000 size=02618h (  9752) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001c8ec vaddr=40080000 size=0372ch ( 14124) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=12ea4h ( 77476) map[0m
+[0;32mI (142) esp_image: segment 4: paddr=00032ecc vaddr=4008372c size=07754h ( 30548) load[0m
+[0;32mI (154) esp_image: segment 5: paddr=0003a628 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (160) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (160) boot: Disabling RNG early entropy source...[0m
+[0;32mI (173) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (183) app_init: Application information:[0m
+[0;32mI (187) app_init: Project name:     Analog[0m
+[0;32mI (191) app_init: App version:      5a0da61-dirty[0m
+[0;32mI (195) app_init: Compile time:     Sep 24 2025 14:29:18[0m
+[0;32mI (200) app_init: ELF file SHA256:  d12784705...[0m
+[0;32mI (204) app_init: ESP-IDF:          v6.0-dev-2273-g166269fb93[0m
+[0;32mI (210) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (214) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (218) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (222) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (228) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (233) heap_init: At 3FFB2F00 len 0002D100 (180 KiB): DRAM[0m
+[0;32mI (238) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (244) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (249) heap_init: At 4008AE80 len 00015180 (84 KiB): IRAM[0m
+[0;32mI (256) spi_flash: detected chip: generic[0m
+[0;32mI (258) spi_flash: flash io: dio[0m
+[0;33mW (261) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (274) main_task: Started on CPU0[0m
+[0;32mI (284) main_task: Calling app_main()[0m
+[0;32mI (284) ADC_POT: calibration scheme version is Line Fitting[0m
+[0;32mI (284) ADC_POT: ทดสอบ ADC Potentiometer ของ ESP32[0m
+[0;32mI (284) ADC_POT: Pin: GPIO34 (ADC1_CH6)[0m
+[0;32mI (294) ADC_POT: ช่วง: 0-3.3V[0m
+[0;32mI (294) ADC_POT: ความละเอียด: 12-bit (0-4095)[0m
+[0;32mI (294) ADC_POT: Attenuation: 11dB[0m
+[0;32mI (304) ADC_POT: -------------------------[0m
+[0;32mI (304) ADC_POT: ค่า ADC: 106 | แรงดัน: 0.23V | เปอร์เซ็นต์: 2.6%[0m
+[0;32mI (814) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (1314) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (1814) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (2314) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (2814) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (3314) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (3814) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (4314) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (4814) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (5314) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (5814) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (6314) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+hip revision: v3.1
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) bU����[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a2a4h ( 41636) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001a2cc vaddr=3ffb0000 size=02618h (  9752) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001c8ec vaddr=40080000 size=0372ch ( 14124) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=12ea4h ( 77476) map[0m
+[0;32mI (142) esp_image: segment 4: paddr=00032ecc vaddr=4008372c size=07754h ( 30548) load[0m
+[0;32mI (154) esp_image: segment 5: paddr=0003a628 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (160) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (160) boot: Disabling RNG early entropy source...[0m
+[0;32mI (173) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (183) app_init: Application information:[0m
+[0;32mI (187) app_init: Project name:     Analog[0m
+[0;32mI (191) app_init: App version:      5a0da61-dirty[0m
+[0;32mI (195) app_init: Compile time:     Sep 24 2025 14:29:18[0m
+[0;32mI (200) app_init: ELF file SHA256:  d12784705...[0m
+[0;32mI (204) app_init: ESP-IDF:          v6.0-dev-2273-g166269fb93[0m
+[0;32mI (210) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (214) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (218) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (222) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (228) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (233) heap_init: At 3FFB2F00 len 0002D100 (180 KiB): DRAM[0m
+[0;32mI (238) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (244) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (249) heap_init: At 4008AE80 len 00015180 (84 KiB): IRAM[0m
+[0;32mI (256) spi_flash: detected chip: generic[0m
+[0;32mI (258) spi_flash: flash io: dio[0m
+[0;33mW (261) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (274) main_task: Started on CPU0[0m
+[0;32mI (284) main_task: Calling app_main()[0m
+[0;32mI (284) ADC_POT: calibration scheme version is Line Fitting[0m
+[0;32mI (284) ADC_POT: ทดสอบ ADC Potentiometer ของ ESP32[0m
+[0;32mI (284) ADC_POT: Pin: GPIO34 (ADC1_CH6)[0m
+[0;32mI (294) ADC_POT: ช่วง: 0-3.3V[0m
+[0;32mI (294) ADC_POT: ความละเอียด: 12-bit (0-4095)[0m
+[0;32mI (294) ADC_POT: Attenuation: 11dB[0m
+[0;32mI (304) ADC_POT: -------------------------[0m
+[0;32mI (304) ADC_POT: ค่า ADC: 608 | แรงดัน: 0.63V | เปอร์เซ็นต์: 14.8%[0m
+[0;32mI (814) ADC_POT: ค่า ADC: 1404 | แรงดัน: 1.28V | เปอร์เซ็นต์: 34.3%[0m
+[0;32mI (1314) ADC_POT: ค่า ADC: 1416 | แรงดัน: 1.29V | เปอร์เซ็นต์: 34.6%[0m
+[0;32mI (1814) ADC_POT: ค่า ADC: 1431 | แรงดัน: 1.30V | เปอร์เซ็นต์: 34.9%[0m
+[0;32mI (2314) ADC_POT: ค่า ADC: 1440 | แรงดัน: 1.31V | เปอร์เซ็นต์: 35.2%[0m
+[0;32mI (2814) ADC_POT: ค่า ADC: 1556 | แรงดัน: 1.40V | เปอร์เซ็นต์: 38.0%[0m
+[0;32mI (3314) ADC_POT: ค่า ADC: 1457 | แรงดัน: 1.32V | เปอร์เซ็นต์: 35.6%[0m
+[0;32mI (3814) ADC_POT: ค่า ADC: 1464 | แรงดัน: 1.33V | เปอร์เซ็นต์: 35.8%[0m
+[0;32mI (4314) ADC_POT: ค่า ADC: 1456 | แรงดัน: 1.32V | เปอร์เซ็นต์: 35.6%[0m
+[0;32mI (4814) ADC_POT: ค่า ADC: 1475 | แรงดัน: 1.34V | เปอร์เซ็นต์: 36.0%[0m
+[0;32mI (5314) ADC_POT: ค่า ADC: 1487 | แรงดัน: 1.35V | เปอร์เซ็นต์: 36.3%[0m
+[0;32mI (5814) ADC_POT: ค่า ADC: 1486 | แรงดัน: 1.35V | เปอร์เซ็นต์: 36.3%[0m
+[0;32mI (6314) ADC_POT: ค่า ADC: 1499 | แรงดัน: 1.36V | เปอร์เซ็นต์: 36.6%[0m
+[0;32mI (6814) ADC_POT: ค่า ADC: 1491 | แรงดัน: 1.35V | เปอร์เซ็นต์: 36.4%[0m
+[0;32mI (7314) ADC_POT: ค่า ADC: 1491 | แรงดัน: 1.35V | เปอร์เซ็นต์: 36.4%[0m
+[0;32mI (7814) ADC_POT: ค่า ADC: 1481 | แรงดัน: 1.34V | เปอร์เซ็นต์: 36.2%[0m
+[0;32mI (8314) ADC_POT: ค่า ADC: 1501 | แรงดัน: 1.36V | เปอร์เซ็นต์: 36.7%[0m
+[0;32mI (8814) ADC_POT: ค่า ADC: 1496 | แรงดัน: 1.36V | เปอร์เซ็นต์: 36.5%[0m
+[0;32mI (9314) ADC_POT: ค่า ADC: 1480 | แรงดัน: 1.34V | เปอร์เซ็นต์: 36.1%[0m
+[0;32mI (9814) ADC_POT: ค่า ADC: 1473 | แรงดัน: 1.34V | เปอร์เซ็นต์: 36.0%[0m
+[0;32mI (10314) ADC_POT: ค่า ADC: 1418 | แรงดัน: 1.29V | เปอร์เซ็นต์: 34.6%[0m
+[0;32mI (10814) ADC_POT: ค่า ADC: 1468 | แรงดัน: 1.33V | เปอร์เซ็นต์: 35.8%[0m
+[0;32mI (11314) ADC_POT: ค่า ADC: 1479 | แรงดัน: 1.34V | เปอร์เซ็นต์: 36.1%[0m
+[0;32mI (11814) ADC_POT: ค่า ADC: 1453 | แรงดัน: 1.32V | เปอร์เซ็นต์: 35.5%[0m
+[0;32mI (12314) ADC_POT: ค่า ADC: 1446 | แรงดัน: 1.31V | เปอร์เซ็นต์: 35.3%[0m
+[0;32mI (12814) ADC_POT: ค่า ADC: 1442 | แรงดัน: 1.31V | เปอร์เซ็นต์: 35.2%[0m
+[0;32mI (13314) ADC_POT: ค่า ADC: 1360 | แรงดัน: 1.25V | เปอร์เซ็นต์: 33.2%[0m
+[0;32mI (13814) ADC_POT: ค่า ADC: 1399 | แรงดัน: 1.28V | เปอร์เซ็นต์: 34.2%[0m
+[0;32mI (14314) ADC_POT: ค่า ADC: 1158 | แรงดัน: 1.08V | เปอร์เซ็นต์: 28.3%[0m
+[0;32mI (14814) ADC_POT: ค่า ADC: 1369 | แรงดัน: 1.25V | เปอร์เซ็นต์: 33.4%[0m
+[0;32mI (15314) ADC_POT: ค่า ADC: 1431 | แรงดัน: 1.30V | เปอร์เซ็นต์: 34.9%[0m
+[0;32mI (15814) ADC_POT: ค่า ADC: 1373 | แรงดัน: 1.25V | เปอร์เซ็นต์: 33.5%[0m
+[0;32mI (16314) ADC_POT: ค่า ADC: 1366 | แรงดัน: 1.25V | เปอร์เซ็นต์: 33.4%[0m
+[0;32mI (16814) ADC_POT: ค่า ADC: 1516 | แรงดัน: 1.37V | เปอร์เซ็นต์: 37.0%[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6376
+load:0x40078000,len:15864
+load:0x40080400,len:3908
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v6.0-dev-2273-g166269fb93 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Sep 24 2025 14:29:22[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a2a4h ( 41636) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001a2cc vaddr=3ffb0000 size=02618h (  9752) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001c8ec vaddr=40080000 size=0372ch ( 14124) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=12ea4h ( 77476) map[0m
+[0;32mI (142) esp_image: segment 4: paddr=00032ecc vaddr=4008372c size=07754h ( 30548) load[0m
+[0;32mI (154) esp_image: segment 5: paddr=0003a628 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (160) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (160) boot: Disabling RNG early entropy source...[0m
+[0;32mI (173) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (183) app_init: Application information:[0m
+[0;32mI (187) app_init: Project name:     Analog[0m
+[0;32mI (191) app_init: App version:      5a0da61-dirty[0m
+[0;32mI (195) app_init: Compile time:     Sep 24 2025 14:29:18[0m
+[0;32mI (200) app_init: ELF file SHA256:  d12784705...[0m
+[0;32mI (204) app_init: ESP-IDF:          v6.0-dev-2273-g166269fb93[0m
+[0;32mI (210) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (214) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (218) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (222) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (228) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (233) heap_init: At 3FFB2F00 len 0002D100 (180 KiB): DRAM[0m
+[0;32mI (238) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (244) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (249) heap_init: At 4008AE80 len 00015180 (84 KiB): IRAM[0m
+[0;32mI (256) spi_flash: detected chip: generic[0m
+[0;32mI (258) spi_flash: flash io: dio[0m
+[0;33mW (261) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (274) main_task: Started on CPU0[0m
+[0;32mI (284) main_task: Calling app_main()[0m
+[0;32mI (284) ADC_POT: calibration scheme version is Line Fitting[0m
+[0;32mI (284) ADC_POT: ทดสอบ ADC Potentiometer ของ ESP32[0m
+[0;32mI (284) ADC_POT: Pin: GPIO34 (ADC1_CH6)[0m
+[0;32mI (294) ADC_POT: ช่วง: 0-3.3V[0m
+[0;32mI (294) ADC_POT: ความละเอียด: 12-bit (0-4095)[0m
+[0;32mI (294) ADC_POT: Attenuation: 11dB[0m
+[0;32mI (304) ADC_POT: -------------------------[0m
+[0;32mI (304) ADC_POT: ค่า ADC: 1110 | แรงดัน: 1.04V | เปอร์เซ็นต์: 27.1%[0m
+[0;32mI (814) ADC_POT: ค่า ADC: 1942 | แรงดัน: 1.72V | เปอร์เซ็นต์: 47.4%[0m
+[0;32mI (1314) ADC_POT: ค่า ADC: 1936 | แรงดัน: 1.71V | เปอร์เซ็นต์: 47.3%[0m
+[0;32mI (1814) ADC_POT: ค่า ADC: 1693 | แรงดัน: 1.51V | เปอร์เซ็นต์: 41.3%[0m
+[0;32mI (2314) ADC_POT: ค่า ADC: 1803 | แรงดัน: 1.60V | เปอร์เซ็นต์: 44.0%[0m
+[0;32mI (2814) ADC_POT: ค่า ADC: 1841 | แรงดัน: 1.63V | เปอร์เซ็นต์: 45.0%[0m
+[0;32mI (3314) ADC_POT: ค่า ADC: 1837 | แรงดัน: 1.63V | เปอร์เซ็นต์: 44.9%[0m
+[0;32mI (3814) ADC_POT: ค่า ADC: 1826 | แรงดัน: 1.62V | เปอร์เซ็นต์: 44.6%[0m
+[0;32mI (4314) ADC_POT: ค่า ADC: 1746 | แรงดัน: 1.56V | เปอร์เซ็นต์: 42.6%[0m
+[0;32mI (4814) ADC_POT: ค่า ADC: 1815 | แรงดัน: 1.61V | เปอร์เซ็นต์: 44.3%[0m
+[0;32mI (5314) ADC_POT: ค่า ADC: 1777 | แรงดัน: 1.58V | เปอร์เซ็นต์: 43.4%[0m
+[0;32mI (5814) ADC_POT: ค่า ADC: 1787 | แรงดัน: 1.59V | เปอร์เซ็นต์: 43.6%[0m
+[0;32mI (6314) ADC_POT: ค่า ADC: 1772 | แรงดัน: 1.58V | เปอร์เซ็นต์: 43.3%[0m
+[0;32mI (6814) ADC_POT: ค่า ADC: 1783 | แรงดัน: 1.59V | เปอร์เซ็นต์: 43.5%[0m
+[0;32mI (7314) ADC_POT: ค่า ADC: 1750 | แรงดัน: 1.56V | เปอร์เซ็นต์: 42.7%[0m
+[0;32mI (7814) ADC_POT: ค่า ADC: 1770 | แรงดัน: 1.58V | เปอร์เซ็นต์: 43.2%[0m
+[0;32mI (8314) ADC_POT: ค่า ADC: 1727 | แรงดัน: 1.54V | เปอร์เซ็นต์: 42.2%[0m
+[0;32mI (8814) ADC_POT: ค่า ADC: 1745 | แรงดัน: 1.56V | เปอร์เซ็นต์: 42.6%[0m
+[0;32mI (9314) ADC_POT: ค่า ADC: 1769 | แรงดัน: 1.58V | เปอร์เซ็นต์: 43.2%[0m
+[0;32mI (9814) ADC_POT: ค่า ADC: 1731 | แรงดัน: 1.54V | เปอร์เซ็นต์: 42.3%[0m
+[0;32mI (10314) ADC_POT: ค่า ADC: 1726 | แรงดัน: 1.54V | เปอร์เซ็นต์: 42.1%[0m
+[0;32mI (10814) ADC_POT: ค่า ADC: 1700 | แรงดัน: 1.52V | เปอร์เซ็นต์: 41.5%[0m
+[0;32mI (11314) ADC_POT: ค่า ADC: 1780 | แรงดัน: 1.59V | เปอร์เซ็นต์: 43.5%[0m
+[0;32mI (11814) ADC_POT: ค่า ADC: 1714 | แรงดัน: 1.53V | เปอร์เซ็นต์: 41.9%[0m
+[0;32mI (12314) ADC_POT: ค่า ADC: 1729 | แรงดัน: 1.54V | เปอร์เซ็นต์: 42.2%[0m
+[0;32mI (12814) ADC_POT: ค่า ADC: 1714 | แรงดัน: 1.53V | เปอร์เซ็นต์: 41.9%[0m
+[0;32mI (13314) ADC_POT: ค่า ADC: 1683 | แรงดัน: 1.51V | เปอร์เซ็นต์: 41.1%[0m
+[0;32mI (13814) ADC_POT: ค่า ADC: 1731 | แรงดัน: 1.54V | เปอร์เซ็นต์: 42.3%[0m
+[0;32mI (14314) ADC_POT: ค่า ADC: 1598 | แรงดัน: 1.44V | เปอร์เซ็นต์: 39.0%[0m
+[0;32mI (14814) ADC_POT: ค่า ADC: 1644 | แรงดัน: 1.48V | เปอร์เซ็นต์: 40.1%[0m
+[0;32mI (15314) ADC_POT: ค่า ADC: 1565 | แรงดัน: 1.41V | เปอร์เซ็นต์: 38.2%[0m
+[0;32mI (15814) ADC_POT: ค่า ADC: 1518 | แรงดัน: 1.37V | เปอร์เซ็นต์: 37.1%[0m
+[0;32mI (16314) ADC_POT: ค่า ADC: 1470 | แรงดัน: 1.33V | เปอร์เซ็นต์: 35.9%[0m
+[0;32mI (16814) ADC_POT: ค่า ADC: 1367 | แรงดัน: 1.25V | เปอร์เซ็นต์: 33.4%[0m
+[0;32mI (17314) ADC_POT: ค่า ADC: 1419 | แรงดัน: 1.29V | เปอร์เซ็นต์: 34.7%[0m
+[0;32mI (17814) ADC_POT: ค่า ADC: 1387 | แรงดัน: 1.27V | เปอร์เซ็นต์: 33.9%[0m
+[0;32mI (18314) ADC_POT: ค่า ADC: 1321 | แรงดัน: 1.21V | เปอร์เซ็นต์: 32.3%[0m
+[0;32mI (18814) ADC_POT: ค่า ADC: 1210 | แรงดัน: 1.12V | เปอร์เซ็นต์: 29.5%[0m
+[0;32mI (19314) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (19814) ADC_POT: ค่า ADC: 27 | แรงดัน: 0.16V | เปอร์เซ็นต์: 0.7%[0m
+[0;32mI (20314) ADC_POT: ค่า ADC: 21 | แรงดัน: 0.16V | เปอร์เซ็นต์: 0.5%[0m
+[0;32mI (20814) ADC_POT: ค่า ADC: 13 | แรงดัน: 0.15V | เปอร์เซ็นต์: 0.3%[0m
+[0;32mI (21314) ADC_POT: ค่า ADC: 8 | แรงดัน: 0.15V | เปอร์เซ็นต์: 0.2%[0m
+[0;32mI (21814) ADC_POT: ค่า ADC: 6 | แรงดัน: 0.15V | เปอร์เซ็นต์: 0.1%[0m
+[0;32mI (22314) ADC_POT: ค่า ADC: 1 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (22814) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (23314) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (23814) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (24314) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (24814) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (25314) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (25814) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (26314) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (26814) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (27314) ADC_POT: ค่า ADC: 5 | แรงดัน: 0.15V | เปอร์เซ็นต์: 0.1%[0m
+[0;32mI (27814) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (28314) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (28814) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (29314) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (29814) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (30314) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (30814) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (31314) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (31814) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (32314) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (32814) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6376
+load:0x40078000,len:15864
+load:0x40080400,len:3908
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v6.0-dev-2273-g166269fb93 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Sep 24 2025 14:29:22[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a2a4h ( 41636) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001a2cc vaddr=3ffb0000 size=02618h (  9752) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001c8ec vaddr=40080000 size=0372ch ( 14124) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=12ea4h ( 77476) map[0m
+[0;32mI (142) esp_image: segment 4: paddr=00032ecc vaddr=4008372c size=07754h ( 30548) load[0m
+[0;32mI (154) esp_image: segment 5: paddr=0003a628 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (160) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (160) boot: Disabling RNG early entropy source...[0m
+[0;32mI (173) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (183) app_init: Application information:[0m
+[0;32mI (187) app_init: Project name:     Analog[0m
+[0;32mI (191) app_init: App version:      5a0da61-dirty[0m
+[0;32mI (195) app_init: Compile time:     Sep 24 2025 14:29:18[0m
+[0;32mI (200) app_init: ELF file SHA256:  d12784705...[0m
+[0;32mI (204) app_init: ESP-IDF:          v6.0-dev-2273-g166269fb93[0m
+[0;32mI (210) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (214) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (218) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (222) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (228) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (233) heap_init: At 3FFB2F00 len 0002D100 (180 KiB): DRAM[0m
+[0;32mI (238) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (244) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (249) heap_init: At 4008AE80 len 00015180 (84 KiB): IRAM[0m
+[0;32mI (256) spi_flash: detected chip: generic[0m
+[0;32mI (258) spi_flash: flash io: dio[0m
+[0;33mW (261) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (274) main_task: Started on CPU0[0m
+[0;32mI (284) main_task: Calling app_main()[0m
+[0;32mI (284) ADC_POT: calibration scheme version is Line Fitting[0m
+[0;32mI (284) ADC_POT: ทดสอบ ADC Potentiometer ของ ESP32[0m
+[0;32mI (284) ADC_POT: Pin: GPIO34 (ADC1_CH6)[0m
+[0;32mI (294) ADC_POT: ช่วง: 0-3.3V[0m
+[0;32mI (294) ADC_POT: ความละเอียด: 12-bit (0-4095)[0m
+[0;32mI (294) ADC_POT: Attenuation: 11dB[0m
+[0;32mI (304) ADC_POT: -------------------------[0m
+[0;32mI (304) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (814) ADC_POT: ค่า ADC: 56 | แรงดัน: 0.19V | เปอร์เซ็นต์: 1.4%[0m
+[0;32mI (1314) ADC_POT: ค่า ADC: 126 | แรงดัน: 0.24V | เปอร์เซ็นต์: 3.1%[0m
+[0;32mI (1814) ADC_POT: ค่า ADC: 184 | แรงดัน: 0.29V | เปอร์เซ็นต์: 4.5%[0m
+[0;32mI (2314) ADC_POT: ค่า ADC: 259 | แรงดัน: 0.35V | เปอร์เซ็นต์: 6.3%[0m
+[0;32mI (2814) ADC_POT: ค่า ADC: 337 | แรงดัน: 0.41V | เปอร์เซ็นต์: 8.2%[0m
+[0;32mI (3314) ADC_POT: ค่า ADC: 410 | แรงดัน: 0.47V | เปอร์เซ็นต์: 10.0%[0m
+[0;32mI (3814) ADC_POT: ค่า ADC: 472 | แรงดัน: 0.52V | เปอร์เซ็นต์: 11.5%[0m
+[0;32mI (4314) ADC_POT: ค่า ADC: 506 | แรงดัน: 0.55V | เปอร์เซ็นต์: 12.4%[0m
+[0;32mI (4814) ADC_POT: ค่า ADC: 535 | แรงดัน: 0.58V | เปอร์เซ็นต์: 13.1%[0m
+[0;32mI (5314) ADC_POT: ค่า ADC: 556 | แรงดัน: 0.59V | เปอร์เซ็นต์: 13.6%[0m
+[0;32mI (5814) ADC_POT: ค่า ADC: 574 | แรงดัน: 0.61V | เปอร์เซ็นต์: 14.0%[0m
+[0;32mI (6314) ADC_POT: ค่า ADC: 571 | แรงดัน: 0.61V | เปอร์เซ็นต์: 13.9%[0m
+[0;32mI (6814) ADC_POT: ค่า ADC: 544 | แรงดัน: 0.58V | เปอร์เซ็นต์: 13.3%[0m
+[0;32mI (7314) ADC_POT: ค่า ADC: 521 | แรงดัน: 0.56V | เปอร์เซ็นต์: 12.7%[0m
+[0;32mI (7814) ADC_POT: ค่า ADC: 461 | แรงดัน: 0.52V | เปอร์เซ็นต์: 11.3%[0m
+[0;32mI (8314) ADC_POT: ค่า ADC: 450 | แรงดัน: 0.51V | เปอร์เซ็นต์: 11.0%[0m
+[0;32mI (8814) ADC_POT: ค่า ADC: 471 | แรงดัน: 0.52V | เปอร์เซ็นต์: 11.5%[0m
+[0;32mI (9314) ADC_POT: ค่า ADC: 424 | แรงดัน: 0.49V | เปอร์เซ็นต์: 10.4%[0m
+[0;32mI (9814) ADC_POT: ค่า ADC: 384 | แรงดัน: 0.45V | เปอร์เซ็นต์: 9.4%[0m
+[0;32mI (10314) ADC_POT: ค่า ADC: 334 | แรงดัน: 0.41V | เปอร์เซ็นต์: 8.2%[0m
+[0;32mI (10814) ADC_POT: ค่า ADC: 285 | แรงดัน: 0.37V | เปอร์เซ็นต์: 7.0%[0m
+[0;32mI (11314) ADC_POT: ค่า ADC: 249 | แรงดัน: 0.34V | เปอร์เซ็นต์: 6.1%[0m
+[0;32mI (11814) ADC_POT: ค่า ADC: 183 | แรงดัน: 0.29V | เปอร์เซ็นต์: 4.5%[0m
+[0;32mI (12314) ADC_POT: ค่า ADC: 168 | แรงดัน: 0.28V | เปอร์เซ็นต์: 4.1%[0m
+[0;32mI (12814) ADC_POT: ค่า ADC: 130 | แรงดัน: 0.25V | เปอร์เซ็นต์: 3.2%[0m
+[0;32mI (13314) ADC_POT: ค่า ADC: 96 | แรงดัน: 0.22V | เปอร์เซ็นต์: 2.3%[0m
+[0;32mI (13814) ADC_POT: ค่า ADC: 65 | แรงดัน: 0.19V | เปอร์เซ็นต์: 1.6%[0m
+[0;32mI (14314) ADC_POT: ค่า ADC: 39 | แรงดัน: 0.17V | เปอร์เซ็นต์: 1.0%[0m
+[0;32mI (14814) ADC_POT: ค่า ADC: 18 | แรงดัน: 0.16V | เปอร์เซ็นต์: 0.4%[0m
+[0;32mI (15314) ADC_POT: ค่า ADC: 1 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (15814) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (16314) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (16814) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (17314) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (17814) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (18314) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (18814) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (19314) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (19814) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (20314) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (20814) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m
+[0;32mI (21314) ADC_POT: ค่า ADC: 0 | แรงดัน: 0.14V | เปอร์เซ็นต์: 0.0%[0m

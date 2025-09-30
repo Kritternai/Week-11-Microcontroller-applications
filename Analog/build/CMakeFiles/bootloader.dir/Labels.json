@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/kbbk/Week-11-Microcontroller-applications/Analog/build/CMakeFiles/bootloader"
+		},
+		{
+			"file" : "/Users/kbbk/Week-11-Microcontroller-applications/Analog/build/CMakeFiles/bootloader.rule"
+		},
+		{
+			"file" : "/Users/kbbk/Week-11-Microcontroller-applications/Analog/build/CMakeFiles/bootloader-complete.rule"
+		},
+		{
+			"file" : "/Users/kbbk/Week-11-Microcontroller-applications/Analog/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+		},
+		{
+			"file" : "/Users/kbbk/Week-11-Microcontroller-applications/Analog/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+		},
+		{
+			"file" : "/Users/kbbk/Week-11-Microcontroller-applications/Analog/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+		},
+		{
+			"file" : "/Users/kbbk/Week-11-Microcontroller-applications/Analog/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+		},
+		{
+			"file" : "/Users/kbbk/Week-11-Microcontroller-applications/Analog/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+		},
+		{
+			"file" : "/Users/kbbk/Week-11-Microcontroller-applications/Analog/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+		},
+		{
+			"file" : "/Users/kbbk/Week-11-Microcontroller-applications/Analog/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"bootloader"
+		],
+		"name" : "bootloader"
+	}
+}

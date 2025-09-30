@@ -1,0 +1,2 @@
+source /Users/kbbk/Week-11-Microcontroller-applications/Analog/build/bootloader/gdbinit/symbols
+source /Users/kbbk/Week-11-Microcontroller-applications/Analog/build/bootloader/gdbinit/connect
